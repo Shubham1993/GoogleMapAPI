@@ -6,6 +6,8 @@
 //  Copyright © 2017 Shubham. All rights reserved.
 //
 
+@import GoogleMaps;
+@import GooglePlaces;
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [GMSServices provideAPIKey:@"AIzaSyBC0vxKS4tSADanpoqaECTTAO6X85kSvxw"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyBC0vxKS4tSADanpoqaECTTAO6X85kSvxw"];
     return YES;
 }
 
